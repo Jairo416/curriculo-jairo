@@ -1,0 +1,79 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html style="border: 2px solid black; padding: 10px; margin: 10px;">
+<h1 style="font-family: Arial; font-size: 50px; text-align: center;">Currículo</h1>
+<!-- "style=" - formatação da escrita (tipo, tamnanho e alinhamento da(s) palavra(s)) -->
+<br> <!-- Quebra de linha ou dar um espaço simples diretamente -->
+
+<p style="font-family: Arial; font-size: 20px"><strong>Nome:</strong> Jairo Roberto de Andrade Júnior</p>
+<p style="font-family: Arial; font-size: 20px"><strong>Idade:</strong> 23 anos</p>
+<p style="font-family: Arial; font-size: 20px"><strong>Telefone:</strong> (37) 99843-8294</p>
+<p style="font-family: Arial; font-size: 20px"><strong>Email:</strong> jairojunior.03@gmail.com</p>
+<hr> <!-- Coloca uma linha de um canto ao outro para separar conteúdo acima ou abaixo -->
+<h2 style="font-family: Arial; text-align: center; font-size: 30px;"><strong>Formação acadêmica(Escolaridade):</strong></h2>
+<br>
+<ul><li style="text-align: left; font-family: Arial; font-size: 20px">Ensino médio concluído</li></ul>
+<hr>
+<h2 style="font-family: Arial; text-align: center; font-size: 30px;"><strong>Cursos complementares:</strong></h2>
+<br>
+<ul><li style="text-align: left; font-family: Arial; font-size: 20px">Curso de Inglês Uaitec - Básico 1 - (23/04/2019 à 13/08/2019) </li></ul>
+<button onclick="document.getElementById('txt1').toggleAttribute('hidden');document.getElementById('img1').toggleAttribute('hidden');" style="font-size: 20px;">
+<span id="txt1"> UAITEC</span>
+<img id="img1" src="Fotos/UAITEC.jpg" width="200" height="150" alt="Botão 1" hidden>
+</button>
+<ul><li style="text-align: left; font-family: Arial; font-size: 20px">Curso Informática Gerencial CNI - (31/01/2024 á Julho 2024) </li></ul>
+<button onclick="document.getElementById('txt2').toggleAttribute('hidden');document.getElementById('img2').toggleAttribute('hidden');" style="font-size: 20px;">
+<span id="txt2"> CNI</span>
+<img id="img2" src="Fotos/CNI.jpg" width="200" height="150" alt="Botão 2" hidden>
+</button>
+<ul><li style="text-align: left; font-family: Arial; font-size: 20px">Curso TI Senai - (29/04/2026 até o momento) </li></ul>
+<button onclick="document.getElementById('txt3').toggleAttribute('hidden');document.getElementById('img3').toggleAttribute('hidden');" style="font-size: 20px;">
+<span id="txt3"> SENAI</span>
+<img id="img3" src="Fotos/SENAI.jpg" width="200" height="150" alt="Botão 3" hidden>
+</button>
+<hr>
+<h2 style="font-family: Arial; text-align: center; font-size: 30px;"><strong>Experiências:</strong></h2>
+<br>
+<ul><li style="text-align: left; font-family: Arial; font-size: 20px">Supermercado Rena - Operador de caixa - Jove Soares/Prainha - (25/05/2021 á 17/12/2021) </li></ul>
+<button onclick="document.getElementById('txt4').toggleAttribute('hidden');document.getElementById('img4').toggleAttribute('hidden');" style="font-size: 20px;">
+<span id="txt4"> RENA</span>
+<img id="img4" src="Fotos/RENA.webp" width="200" height="150" alt="Botão 4" hidden>
+</button>
+<ul><li style="text-align: left; font-family: Arial; font-size: 20px">Supermercado Cooperativa - Repositor - (02/03/2022 á 15/04/2022) </li></ul>
+<button onclick="document.getElementById('txt5').toggleAttribute('hidden');document.getElementById('img5').toggleAttribute('hidden');" style="font-size: 20px;">
+<span id="txt5"> COOPERATIVA</span>
+<img id="img5" src="Fotos/COOPERATIVA.jpg" width="200" height="150" alt="Botão 5" hidden>
+</button>
+<ul><li style="text-align: left; font-family: Arial; font-size: 20px">Siderurgica SIMEC - Aprendiz Mecânico - (05/09/2022 á 07/08/2023) </li></ul>
+<button onclick="document.getElementById('txt6').toggleAttribute('hidden');document.getElementById('img6').toggleAttribute('hidden');" style="font-size: 20px;">
+<span id="txt6"> SIMEC</span>
+<img id="img6" src="Fotos/SIMEC.jpg" width="200" height="150" alt="Botão 6" hidden>
+</button>
+<ul><li style="text-align: left; font-family: Arial; font-size: 20px">Loja Forte das Festas - Operador de caixa - (18/10/2023 á 16/11/2023) </li></ul>
+<button onclick="document.getElementById('txt7').toggleAttribute('hidden');document.getElementById('img7').toggleAttribute('hidden');" style="font-size: 20px;">
+<span id="txt7"> FORTE DAS FESTAS</span>
+<img id="img7" src="Fotos/FORTE DAS FESTAS.jpg" width="200" height="150" alt="Botão 7" hidden>
+</button>
+<ul><li style="text-align: left; font-family: Arial; font-size: 20px">Supermercado Rena Gourmet - Operador de caixa - Centro - (13/05/2024 até o momento(01/07/2026)) </li></ul>
+<button onclick="document.getElementById('txt8').toggleAttribute('hidden');document.getElementById('img8').toggleAttribute('hidden');" style="font-size: 20px;">
+<span id="txt8"> RENA 2</span>
+<img id="img8" src="Fotos/RENA 2.webp" width="200" height="150" alt="Botão8" hidden>
+</button>
+</html>
+
+<script>
+// 1. Bloquear o clique com o botão direito do mouse (Context Menu)
+document.addEventListener('contextmenu', function(evento) {evento.preventDefault();});
+
+// 2. Bloquear atalhos de teclado comuns de inspeção
+document.addEventListener('keydown', function(evento) {
+        
+// Bloquear F12
+if (evento.key === "F12") {evento.preventDefault();}
+
+// Bloquear Ctrl+Shift+I (Inspecionar), Ctrl+Shift+J (Console) e Ctrl+U (Ver Código Fonte)
+if (evento.ctrlKey && (evento.shiftKey && (evento.key === 'I' || evento.key === 'i' || evento.key === 'J' || evento.key === 'j') || (evento.key === 'U' || evento.key === 'u'))) {evento.preventDefault();}
+
+// Bloquear Cmd+Opt+I no Mac
+if (evento.metaKey && evento.altKey && (evento.key === 'I' || evento.key === 'i')) {evento.preventDefault();}});
+</script>
